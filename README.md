@@ -12,16 +12,20 @@ Der Großteil der Rennen findet auf Bahn 12 und 3 statt. Dies bleibt über den g
 
 
 ![alt text](https://raw.githubusercontent.com/FinnBurkhardt/IT-Competition/main/images/RacesPerDayTrackIdLinear.png)
+
 Abb. 1: Zeigt die Anzahl der Rennen pro Tag	für jede Rennbahn 20-MA (Moving Average der letzten 20 Tage)	
 
 
 ![alt text](https://raw.githubusercontent.com/FinnBurkhardt/IT-Competition/main/images/RacesPerDayTrackIdLog.png)
+
 Abb. 2: Zeigt die Anzahl der Rennen pro Tag für jede Rennbahn 20-MA (logarithmisch)
 
 ![alt text](https://raw.githubusercontent.com/FinnBurkhardt/IT-Competition/main/images/RacesPerDayTrackIdStationary.png)
+
 Abb. 3: Zeigt die Anzahl der Rennen pro Tag	für jede Rennbahn  geteilt durch die Anzahl aller Rennen des Tages  20-MA	 		
 
 ![alt text](https://raw.githubusercontent.com/FinnBurkhardt/IT-Competition/main/images/TrackIdNumberOfRaces.png)
+
 Abb. 4: Anzahl der Rennen für jede Rennbahn (logarithmisch)
 
 “ChallangerId” und “OpponentId” sind die Ids der Fahrer. In dem Datensatz erschienen Ids zwischen 0 und 14664, wobei die 0 einer speziellen Betrachtung bedarf (siehe Fehler).
@@ -32,22 +36,30 @@ Der Spieler mit der Id 2967 spielte die längste Zeit. Es lagen 1841 Tage zwisch
 
 
 ![alt text](https://github.com/FinnBurkhardt/IT-Competition/blob/main/images/DurationHistogram.png)
+
 Abb. 5: Histogramm der Zeit zwischen erstem und letztem Rennen (20 bins)
 	
 ![alt text](https://raw.githubusercontent.com/FinnBurkhardt/IT-Competition/main/images/NumberOfRacesHist.png)
+
 Abb. 6: Histogramm der gesamten Rennanzahl jedes Spielers (20 bins)
 
 
 “Money” bezeichnet den Einsatz der für die Teilnahme an einem Rennen geleistet werden muss. Der Wertebereich liegt zwischen 30 und 1.000.000. Der minimale Wert im Datensatz ist 30. Es existieren 4 Rennen deren Einsatz über 1.000.000 liegt. Dies wird im Abschnitt Fehlerbehandlung näher behandelt. Der Mittelwert der Einsätze liegt bei 2187,443 und der Median bei 30.
 Ein klarer Trend der Einsätze lässt sich in dem betrachteten Zeitintervall nicht beobachten.
 
+![alt text](https://raw.githubusercontent.com/FinnBurkhardt/IT-Competition/main/images/MoneyHistogram.png)
 
-Abb. 7: Histogramm der Renneinsätze			Abb. 8: Durchschnittlicher Renneinsatz
-(50 bins)						pro Tag 20-MA
+Abb. 7: Histogramm der Renneinsätze (50 bins)
+
+![alt text](https://raw.githubusercontent.com/FinnBurkhardt/IT-Competition/main/images/MoneyPerDay.png)
+
+Abb. 8: Durchschnittlicher Renneinsatz pro Tag 20-MA
 
 
 “Weather” beschreibt das Wetter während des Rennens.
 Dabei lautet die prozentuale Verteilung der Wetterausprägungen: rainy: 0,25; snowy: 0,124; sunny: 0,501; thundery: 0,125
+
+![alt text](https://raw.githubusercontent.com/FinnBurkhardt/IT-Competition/main/images/Weather.png)
 
 Abb. 9: Häufigkeit der Wetterausprägungen			
 
@@ -55,11 +67,21 @@ Weiterhin kann beobachtet werden, dass die Zahl der Rennen mit der Zeit stark ab
 Diese These wird auch durch die verringerte Zahl neuer Spieler gestützt.
 Wiederholte Spikes in der Zahl der Rennen und in der Zahl der neuen Spieler könnte auf spezielle Events oder auf Werbeaktionen hinweisen.
 
-Abb. 10: Rennen pro Tag 20-MA 		Abb. 11:  Rennen pro Tag 20-MA (logarithmisch)	
+![alt text](https://raw.githubusercontent.com/FinnBurkhardt/IT-Competition/main/images/RacesPerDayLinear.png)
 
-Abb. 12: Anzahl der neuen Spieler pro Tag	Abb. 13:  Anzahl der neuen Spieler pro Tag	
-20-MA 						20-MA (log)
+Abb. 10: Rennen pro Tag 20-MA 		
 
+![alt text](https://raw.githubusercontent.com/FinnBurkhardt/IT-Competition/main/images/RacesPerDayLog.png)
+
+Abb. 11:  Rennen pro Tag 20-MA (logarithmisch)	
+
+![alt text](https://raw.githubusercontent.com/FinnBurkhardt/IT-Competition/main/images/newPlayersPerDayLinear.png)
+
+Abb. 12: Anzahl der neuen Spieler pro Tag 20-MA 
+
+![alt text](https://raw.githubusercontent.com/FinnBurkhardt/IT-Competition/main/images/newPlayersPerDayLog.png)
+
+Abb. 13:  Anzahl der neuen Spieler pro Tag 20-MA (log)
 
 Fehlerhafte und spezielle Einträge
 
@@ -84,6 +106,9 @@ Auf einem Signifikanzniveau von 0,05 wird eine Korrelation zwischen dem Auftrete
 Als Nächstes wird untersucht, ob die vorhandenen Werte des Attributes “fuel_consumption” mit dem den weiteren Attributen Korrelieren.
 Hierzu wird die Pearson Korrelation verwendet falls beide Attribute kontinuierlich sind und die Varianzanalyse (ANOVA), falls eines der Attribute diskret ist.
 Auf einem 0,05 Signifikanzniveau sind die Werte von “fuel_consumption” abhängig von “track_id”, “challenger”, “opponent”, “winner”, “wheater” und “money”.
+
+
+![alt text](https://raw.githubusercontent.com/FinnBurkhardt/IT-Competition/main/images/trackIdFuelConsumption.png)
 
 Abb. 14: Treibstoffverbrauch auf Rennbahnen (Kreuze markieren Mittelwerte)
 
