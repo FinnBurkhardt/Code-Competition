@@ -1,4 +1,10 @@
 
+
+
+##Ich empfele die PDF ReadMe Datei zu verwenden, da sie vorteilhafter formatiert ist.
+
+
+
 Grundlegende Betrachtung
 
 Der vorliegende Datensatz umfasst 166610 Einträge mit jeweils 12 Attributen.
