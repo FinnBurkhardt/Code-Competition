@@ -9,6 +9,11 @@ Im Datensatz erscheinen TrackIds von 3 bis 14
 Dabei werden jedoch nicht alle Strecken gleich häufig genutzt.
 Der Großteil der Rennen findet auf Bahn 12 und 3 statt. Dies bleibt über den gesamten im Datensatz abgebildeten Zeitintervall der Fall.
 
+
+
+![alt text](https://raw.githubusercontent.com/FinnBurkhardt/IT-Competition/main/images/RacesPerDayTrackIdLinear.png)
+
+
 Abb. 1: Zeigt die Anzahl der Rennen pro Tag	Abb. 2: Zeigt die Anzahl der Rennen pro Tag
 für jede Rennbahn 20-MA1			für jede Rennbahn 20-MA (logarithmisch)
 
