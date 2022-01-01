@@ -12,15 +12,17 @@ Der Großteil der Rennen findet auf Bahn 12 und 3 statt. Dies bleibt über den g
 
 
 ![alt text](https://raw.githubusercontent.com/FinnBurkhardt/IT-Competition/main/images/RacesPerDayTrackIdLinear.png)
+Abb. 1: Zeigt die Anzahl der Rennen pro Tag	für jede Rennbahn 20-MA (Moving Average der letzten 20 Tage)	
 
 
-Abb. 1: Zeigt die Anzahl der Rennen pro Tag	Abb. 2: Zeigt die Anzahl der Rennen pro Tag
-für jede Rennbahn 20-MA1			für jede Rennbahn 20-MA (logarithmisch)
+![alt text](https://raw.githubusercontent.com/FinnBurkhardt/IT-Competition/main/images/RacesPerDayTrackIdLog.png)
+Abb. 2: Zeigt die Anzahl der Rennen pro Tag für jede Rennbahn 20-MA (logarithmisch)
 
+![alt text](https://raw.githubusercontent.com/FinnBurkhardt/IT-Competition/main/images/RacesPerDayTrackIdStationary.png)
+Abb. 3: Zeigt die Anzahl der Rennen pro Tag	für jede Rennbahn  geteilt durch die Anzahl aller Rennen des Tages  20-MA	 		
 
-Abb. 3: Zeigt die Anzahl der Rennen pro Tag	Abb. 4: Anzahl der Rennen für jede Renn-
-für jede Rennbahn  geteilt durch die Anzahl 	bahn (logarithmisch)
-aller Rennen des Tages  20-MA	 		
+![alt text](https://raw.githubusercontent.com/FinnBurkhardt/IT-Competition/main/images/TrackIdNumberOfRaces.png)
+Abb. 4: Anzahl der Rennen für jede Rennbahn (logarithmisch)
 
 “ChallangerId” und “OpponentId” sind die Ids der Fahrer. In dem Datensatz erschienen Ids zwischen 0 und 14664, wobei die 0 einer speziellen Betrachtung bedarf (siehe Fehler).
 Der Spieler mit den meisten Rennen hat die Id 48 und fuhr 10461 Rennen.
@@ -28,9 +30,12 @@ Der Median der Rennen ist 6 und der Mittelwert ~37,954.
 Die Durchschnittszahl der Tage mit die zwischen erstem und letztem Rennen liegen ist ~84,38 Tage. Der Median ist 6 Tage.
 Der Spieler mit der Id 2967 spielte die längste Zeit. Es lagen 1841 Tage zwischen seinem ersten und letzten Rennen. Dabei fand sein erstes Rennen am 09.06.2012 und sein letztes Rennen am 24.06.2017 statt. Über diese Zeit fuhr er jedoch nur 26 Rennen.
 
-Abb. 5: Histogramm der Zeit zwischen erstem 		Abb. 6: Histogramm der gesamten 
-und letztem Rennen (20 bins)				Rennanzahl jedes Spielers (20 bins)
 
+![alt text](https://github.com/FinnBurkhardt/IT-Competition/blob/main/images/DurationHistogram.png)
+Abb. 5: Histogramm der Zeit zwischen erstem und letztem Rennen (20 bins)
+	
+![alt text](https://raw.githubusercontent.com/FinnBurkhardt/IT-Competition/main/images/NumberOfRacesHist.png)
+Abb. 6: Histogramm der gesamten Rennanzahl jedes Spielers (20 bins)
 
 
 “Money” bezeichnet den Einsatz der für die Teilnahme an einem Rennen geleistet werden muss. Der Wertebereich liegt zwischen 30 und 1.000.000. Der minimale Wert im Datensatz ist 30. Es existieren 4 Rennen deren Einsatz über 1.000.000 liegt. Dies wird im Abschnitt Fehlerbehandlung näher behandelt. Der Mittelwert der Einsätze liegt bei 2187,443 und der Median bei 30.
