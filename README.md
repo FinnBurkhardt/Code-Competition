@@ -1,7 +1,7 @@
 
 
 
-## Ich empfele die PDF ReadMe Datei (IT-Wettbewerb.pdf) zu verwenden, da sie vorteilhafter formatiert und umfangreicher ist.
+## Ich empfele die PDF ReadMe Datei (IT-Wettbewerb.pdf) zu verwenden, da sie vorteilhafter formatiert und umfangreicher ist!
 
 
 
